@@ -1,6 +1,6 @@
 # base16-fish-shell (https://github.com/FabioAntunes/base16-fish-shell)
 # Inspired by base16-shell (https://github.com/chriskempson/base16-shell)
-# Espresso scheme by Alex Mirrington (https://github.com/alexmirrington)
+# Espresso scheme by Unknown. Maintained by Alex Mirrington (https://github.com/alexmirrington)
 
 function base16-espresso -d "base16 Espresso theme"
     set options (fish_opt --short=t --long=test)

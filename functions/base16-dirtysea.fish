@@ -9,11 +9,11 @@ function base16-dirtysea -d "base16 dirtysea theme"
 
     # colors
     set color00 "e0/e0/e0" # Base 00 - Black
-    set color01 "00/00/90" # Base 08 - Red
+    set color01 "84/00/00" # Base 08 - Red
     set color02 "73/00/73" # Base 0B - Green
-    set color03 "00/65/65" # Base 0A - Yellow
+    set color03 "75/5b/00" # Base 0A - Yellow
     set color04 "00/73/00" # Base 0D - Blue
-    set color05 "84/00/00" # Base 0E - Magenta
+    set color05 "00/00/90" # Base 0E - Magenta
     set color06 "75/5b/00" # Base 0C - Cyan
     set color07 "00/00/00" # Base 05 - White
     set color08 "70/70/70" # Base 03 - Bright Black
@@ -26,8 +26,8 @@ function base16-dirtysea -d "base16 dirtysea theme"
     set color15 "c4/d9/c4" # Base 07 - Bright White
     set color16 "00/65/65" # Base 09
     set color17 "75/5b/00" # Base 0F
-    set color18 "d0/d0/d0" # Base 01
-    set color19 "c0/c0/c0" # Base 02
+    set color18 "d0/da/d0" # Base 01
+    set color19 "d0/d0/d0" # Base 02
     set color20 "20/20/20" # Base 04
     set color21 "f8/f8/f8" # Base 06
     set color_foreground "00/00/00" # Base 05
@@ -65,7 +65,7 @@ function base16-dirtysea -d "base16 dirtysea theme"
       __put_template_custom Pg 000000 # foreground
       __put_template_custom Ph e0e0e0 # background
       __put_template_custom Pi 000000 # bold color
-      __put_template_custom Pj c0c0c0 # selection color
+      __put_template_custom Pj d0d0d0 # selection color
       __put_template_custom Pk 000000 # selected text color
       __put_template_custom Pl 000000 # cursor
       __put_template_custom Pm e0e0e0 # cursor text

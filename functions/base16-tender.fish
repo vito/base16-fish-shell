@@ -1,37 +1,37 @@
 # base16-fish-shell (https://github.com/FabioAntunes/base16-fish-shell)
 # Inspired by base16-shell (https://github.com/chriskempson/base16-shell)
-# Snazzy scheme by Chawye Hsu (https://github.com/chawyehsu) based on Hyper Snazzy Theme (https://github.com/sindresorhus/hyper-snazzy)
+# tender scheme by Jacobo Tabernero (https://github/com/jacoborus/tender.vim)
 
-function base16-snazzy -d "base16 Snazzy theme"
+function base16-tender -d "base16 tender theme"
     set options (fish_opt --short=t --long=test)
     argparse $options -- $argv
     set padded_seq_values (seq -w 0 21)
 
     # colors
-    set color00 "28/2a/36" # Base 00 - Black
-    set color01 "ff/5c/57" # Base 08 - Red
-    set color02 "5a/f7/8e" # Base 0B - Green
-    set color03 "f3/f9/9d" # Base 0A - Yellow
-    set color04 "57/c7/ff" # Base 0D - Blue
-    set color05 "ff/6a/c1" # Base 0E - Magenta
-    set color06 "9a/ed/fe" # Base 0C - Cyan
-    set color07 "e2/e4/e5" # Base 05 - White
-    set color08 "78/78/7e" # Base 03 - Bright Black
+    set color00 "28/28/28" # Base 00 - Black
+    set color01 "f4/37/53" # Base 08 - Red
+    set color02 "c9/d0/5c" # Base 0B - Green
+    set color03 "ff/c2/4b" # Base 0A - Yellow
+    set color04 "b3/de/ef" # Base 0D - Blue
+    set color05 "d3/b9/87" # Base 0E - Magenta
+    set color06 "73/ce/f4" # Base 0C - Cyan
+    set color07 "ee/ee/ee" # Base 05 - White
+    set color08 "4c/4c/4c" # Base 03 - Bright Black
     set color09 $color01 # Base 08 - Bright Red
     set color10 $color02 # Base 0B - Bright Green
     set color11 $color03 # Base 0A - Bright Yellow
     set color12 $color04 # Base 0D - Bright Blue
     set color13 $color05 # Base 0E - Bright Magenta
     set color14 $color06 # Base 0C - Bright Cyan
-    set color15 "f1/f1/f0" # Base 07 - Bright White
-    set color16 "ff/9f/43" # Base 09
-    set color17 "b2/64/3c" # Base 0F
-    set color18 "34/35/3e" # Base 01
-    set color19 "43/45/4f" # Base 02
-    set color20 "a5/a5/a9" # Base 04
-    set color21 "ef/f0/eb" # Base 06
-    set color_foreground "e2/e4/e5" # Base 05
-    set color_background "28/2a/36" # Base 00
+    set color15 "fe/ff/ff" # Base 07 - Bright White
+    set color16 "dc/96/56" # Base 09
+    set color17 "a1/69/46" # Base 0F
+    set color18 "38/38/38" # Base 01
+    set color19 "48/48/48" # Base 02
+    set color20 "b8/b8/b8" # Base 04
+    set color21 "e8/e8/e8" # Base 06
+    set color_foreground "ee/ee/ee" # Base 05
+    set color_background "28/28/28" # Base 00
 
     # 16 color space
     __put_template 0  $color00
@@ -62,13 +62,13 @@ function base16-snazzy -d "base16 Snazzy theme"
     # foreground / background / cursor color
     if test -n "$ITERM_SESSION_ID"
       # iTerm2 proprietary escape codes
-      __put_template_custom Pg e2e4e5 # foreground
-      __put_template_custom Ph 282a36 # background
-      __put_template_custom Pi e2e4e5 # bold color
-      __put_template_custom Pj 43454f # selection color
-      __put_template_custom Pk e2e4e5 # selected text color
-      __put_template_custom Pl e2e4e5 # cursor
-      __put_template_custom Pm 282a36 # cursor text
+      __put_template_custom Pg eeeeee # foreground
+      __put_template_custom Ph 282828 # background
+      __put_template_custom Pi eeeeee # bold color
+      __put_template_custom Pj 484848 # selection color
+      __put_template_custom Pk eeeeee # selected text color
+      __put_template_custom Pl eeeeee # cursor
+      __put_template_custom Pm 282828 # cursor text
 
     else
       __put_template_var 10 $color_foreground
@@ -81,12 +81,12 @@ function base16-snazzy -d "base16 Snazzy theme"
       __put_template_custom 12 ";7" # cursor (reverse video)
     end
 
-    set -gx fish_color_autosuggestion "78787e" brblack
-    set -gx fish_pager_color_description "ff9f43" yellow
+    set -gx fish_color_autosuggestion "4c4c4c" brblack
+    set -gx fish_pager_color_description "dc9656" yellow
 
-    __base16_fish_shell_set_background "28" "2a" "36"
-    __base16_fish_shell_create_vimrc_background snazzy
-    set -U base16_fish_theme snazzy
+    __base16_fish_shell_set_background "28" "28" "28"
+    __base16_fish_shell_create_vimrc_background tender
+    set -U base16_fish_theme tender
 
     if test -n "$_flag_t"
         set base16_colors
